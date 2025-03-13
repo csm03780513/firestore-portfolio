@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
+import {useNavigate} from "react-router-dom";
 
 const Home = () => {
+    const navigate = useNavigate();
     const [projects, setProjects] = useState([]);
     const [skills, setSkills] = useState([]);
     const [bio, setBio] = useState('');
@@ -24,6 +26,10 @@ const Home = () => {
 
     return (
         <div>
+            <div>
+                <h1>Welcome to My Portfolio</h1>
+                <button onClick={() => navigate('/login')}>Admin Login</button>
+            </div>
             <h1>Portfolio</h1>
             <h2>Bio</h2>
             <p>{bio}</p>

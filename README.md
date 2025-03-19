@@ -1,4 +1,6 @@
 # Getting Started with Firestore Portfolio
+admin user is : admin@moringa
+admin pass is : moringa2012
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
